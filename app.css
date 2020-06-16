@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.412),rgba(0, 0, 0, 0.419)), url(https://images.unsplash.com/photo-1530240242419-6579f912c208?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.intro-text{
+    position: absolute;
+    width: 740px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,0%);
+    color: #fff
+}
+
+.logo{
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.landing-nav{
+    float:right;
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.landing-nav li {
+    display: inline-block;
+    margin-left: 50px;
+    
+}
+
+.landing-nav li a {
+    text-decoration: none;
+    color: #fff
+}
+
+.intro-text h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 250%;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-family: 'Rubik', sans-serif;
+}
+.emoji{
+    word-spacing: 10px;
+}
+
+.game-header {
+padding: 2rem 2rem;
+background: #0a0101e1;
+color: white;
+box-shadow: 0px 2px 8px rgba(0,0,0,0.26);
+margin-top: 0px;
+}
+
+.game-header h2{
+    font-size: 2.0rem;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.about-header {
+    padding: 2rem 2rem;
+    background: #0a0101e1;
+    color: white;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.26);
+    margin-top: 0px;
+    }
+
+.about-header h2{
+    font-size: 2.0rem;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+#h3-title{
+    margin: 40px auto;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+   
+}
+/* the css code for the following three classes
+is how to make a grid of three responsive */
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 100px auto;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+	
+}
+
+.column p{
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.button{
+    padding: 20px 20px;
+    margin-bottom: 10%;
+}
+/*Use flexbox to widen and center button*/
+.btn {
+    display: flex;
+    padding: 10px 30px;
+    justify-content:center ; 
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    border-radius: 150px;
+    color:#fff;
+    background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+#about{
+    background-color: rgba(0, 0, 0, 0.26);
+    overflow: hidden;
+}
+
+.about-me{
+    margin: 50px auto;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    background: white;
+    border-radius: 10px;
+    width: 50%;
+    font-family: 'Rubik', sans-serif;
+
+}
+.about-me img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgb(0, 0, 0);
+    display: block;
+    margin: 0 auto;
+
+}
+
+.profile ul{
+    list-style: none;
+    text-align: center;
+    text-align: left;
+    width: 40%;
+    position:relative;
+    left: 30%;
+    
+}
+.profile ul a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile{
+    border-bottom: 2px solid #0a0101e1;
+}
+
+
+/*-------------------MEDIA QUERIES-----------------*/
+
+/*big tablet to 1200px*/
+@media only screen and (max-width: 1200px) {
+    .row{
+        max-width: 1024px;
+    }
+}
+
+/*Small tablet to big tablet from 768 to 1023px*/
+@media only screen and (max-width: 1023px) {
+
+    .row{
+        max-width: 1027px;
+    }
+    .landing-nav{
+        margin-right: 50px;
+        margin-top: 35px;
+        margin-left: 0px;
+        padding: 0px 0px;
+       
+    }
+    .logo{
+        height: 50px;
+    }
+    .intro-text{
+        transform: (-40%,0)
+    }
+    .profile ul{
+        left: 20%;
+    }
+}
+
+/*Small phones to small tablets* from 481 to 767px*/
+@media only screen and (max-width: 767px){
+
+    .landing-nav{
+        display: none;
+    }
+    .row{
+        text-align: center;
+    }
+    .logo{
+        float: none;
+        text-align: center;
+        height: 60px;
+        
+    }
+    .intro-text{
+        width: 350px;
+        transform: (-35%,0);
+    }
+}
+
+/* Small phones*/
+
+@media only screen and (max-width: 480px){
+    .row{
+        max-width:487px ;
+    }
+    .intro-text{
+        width:240px;
+        top: 50%;
+        transform: translate(-40%,-40%) ;
+        
+    }
+    input{
+        display:block ;
+    }
+    
+    
+    .profile ul{
+        width: 30%;
+        position: unset;
+    }
+}

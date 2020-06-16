@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="row">
+      <img class="logo"
+        src="https://images.squarespace-cdn.com/content/5d1b3d1559efc20001d6757a/1562597940397-Y249NYEPPJEU42NS3G7Q/futureproof_logotype_withBleed_huge.png?format=1500w&content-type=image%2Fpng"
+        alt="future proof logo">
+
+      <img src="" alt="">
+
+      <ul class="landing-nav">
+        <li><a href="#">Introduction</a></li>
+        <li><a href="#game">Guess the truth</a></li>
+        <li><a href="#about">About me</a></li>
+      </ul>
+    </div>
+    <div class="intro-text">
+      <h1>Hello There ! Nice to meet you </h1>
+      <h1 class="emoji">&#x1F601 &#x1F601 &#x1F601 &#x1F601 &#x1F601 &#x1F601 &#x1F601 &#x1F601 &#x1F601 &#x1F601 </h1>
+    </div>
+
+  </header>
+
+  <section id="game">
+    <div class="game-header">
+      <h2> Are you ready for Guess the Truth Game!</h2>
+    </div>
+
+    <h3 id="h3-title">You can do it!</h3>
+
+    <div class="wrapper"> 
+      <div class="columns">
+      
+        
+          <form class="column guess-game-left " action="" id="question-1">
+            <p>Question 1 : I play the guitar</p>
+            <input type="radio" id="option-1" name="question-1"  value="true">
+            <label for="question-1">true</label>
+            <input type="radio" id="option-2" name="question-1" value="false" >
+            <label for="question-1">false</label>
+
+          </form>
+
+          <form class="column guess-game-center " action="" id="question-2">
+            <p>Q 2 : I've been to a wedding</p>
+            <input type="radio" id="option-1" name="question-2" value="true" >
+            <label for="question-2">true</label>
+            <input type="radio" id="option-2" name="question-2" value="false" >
+            <label for="question-2">false</label>
+
+          </form>
+          <form class="column guess-game-right " action="" id="question-3">
+            <p>Question 3 : I LIKE CHEESE??</p>
+            <input type="radio" id="option-1" name="question-3"  value="true" >
+            <label for="question-3">true</label>
+            <input type="radio" id="option-2" name="question-3" value="false">
+            <label for="question-3">false</label>
+
+          </form>
+        
+      
+      </div>
+    </div>
+    
+    <div class="button">
+        <a href="#game" class="btn">submit</a>
+        
+    </div>
+    
+     
+  </section>
+  
+  <section id="about">
+    <div class="about-header">
+      <h2> Who I am</h2>
+    </div>
+
+    <div class="about-me">
+      <div class="profile">
+          <img src="img/me.jpg" alt="A picture of myself">
+          <ul>
+            <li> Alexei Vartoumian</li>
+            <li><a href="https://github.com/AlexeiVartoumian">myGithub <span><i class="fa fa-github" aria-hidden="true"></i>
+            </span></a></li>
+          </ul>
+      </div>
+      <p>Hey there! Firstly please forgive the atrocious photo! So I've been studying Web development and programming in general in my own time. I have found I really like it and am planning to switch careers into this field !</p>
+      <p>Aside from learning about the Tech industry and the how and why of software, I enjoy playing an odd game of chess and long windy walks. Also developed a serious coffee drinking habit though Im just as fond of tea!
+        <br> <br> Yours truly Alexei.
+      </p>
+
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

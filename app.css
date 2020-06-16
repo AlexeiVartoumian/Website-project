@@ -19,7 +19,7 @@ header{
 .intro-text{
     position: absolute;
     width: 740px;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-45%,0%);
     color: #fff

@@ -18,6 +18,11 @@ console.log(q1)
 console.log(q2)
 console.log(q3)
 
+function clearTally(){
+    tally = 0
+}
+
+
 btn.addEventListener('click', function(){
     
     //q1.forEach(function(val){
@@ -61,9 +66,6 @@ btn.addEventListener('click', function(){
  clearTally()
 })
 
-function clearTally(){
-    tally = 0
-}
 
 /*
 for(var i = 0; i <q1.length; i++){
